@@ -1,0 +1,30 @@
+You are an SQL expert, and now I would like you to write SQL based on the question.
+{fewshot}
+
+/* Database schema */
+{db_info}
+
+/* Based on the database schema and the question, pay attention to the following */
+1. For parts involving division that contain integer types, CAST them to REAL.
+2. #values in db display part values from the database. Please ignore the unnecessary values.
+
+Please rewrite the question to SQL-like query in the format: "Show #SELECT (table.column), WHERE condition are xxx (refer to #values), Group by/Order By (refer to columns). Here are 3 example: 
+
+#SQL-like: Show top 5 cards.id, where condition is cards.spend>100, order by cards.spend. 
+#SQL: SELECT id FROM cards WHERE spend > 100 ORDER BY spend LIMIT 5
+
+#SQL-like: Show Count(PaperAuthor.Name), Where condition is Paper.Year = 0
+#SQL: SELECT COUNT(T2.Name) FROM Paper AS T1 INNER JOIN PaperAuthor AS T2 ON T1.Id = T2.PaperId WHERE T1.Year = 0
+
+#SQL-like: Show Author.Name, Where condition is Author.Affiliation = 'University of Oxford', Group By Author.Name Order By Author.spent
+#SQL: SELECT Name FROM Author WHERE Affiliation = 'University of Oxford' Group By Name ORDER BY spent ASC
+
+/* Answer the following: {question} */
+Please answer the question in the following format without any other content:
+```
+#reason: Analyze how to generate SQL based on the question.(format: the question want to ..., so the SQL SELECT ... and ...)
+#columns: All columns ultimately used in SQL(format: table.column_1, table.column_2)
+#values: the filter in SQL (format: 'filter in question' refer to table.column: value. e.g. 'name is not tom' refer to name <> "tom", 2007 refer to strftime('%Y', Date) = '2007')
+#SELECT: SELECT content (display in the order asked by the questions, do not display content not specified by the questions).
+#SQL-like: SQL-like statements ignoring Join conditions
+#SQL: SQL

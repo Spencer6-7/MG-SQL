@@ -1,0 +1,21 @@
+{fewshot}
+
+/* Database schema */
+{db_info}
+{key_col_des}
+
+# Based on the database schema and the examples above, pay attention to the following:
+1. For parts involving division that contain integer types, CAST them to REAL.
+2. "#Values in Database" display part values from the database. Please ignore the unnecessary values.
+3. Please refer to the examples above and answer in the following format without any other content:
+```
+#reason: Analyze how to generate SQL based on the question.(format: the question want to ..., so the SQL SELECT ... and ...)
+#columns: All columns ultimately used in SQL(format: table.column_1, table.column_2)
+#values: the filter in SQL (format: 'filter in question' refer to 'table.column <op> value'. e.g. 'name is not tom' refer to name <> 'tom', 'in 2007' refer to "strftime('%Y', Date) = '2007'")
+#SELECT: SELECT content (format like: 'query in question' refer to table.column. The order of columns in the SELECT clause must be the same as the order in the question.)
+#SQL-like: SQL-like statements ignoring Join conditions
+#SQL: SQL
+```
+
+/* Answer the following: {question} */
+{q_order}

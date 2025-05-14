@@ -1,0 +1,25 @@
+You are a database expert. Please help me check the Pre-SQL based on ###Input, ###Hint, ###Pre-SQL and ###Value Examples. Please follow the steps below:
+1. Pay close attention to the column_description (if provided) and the value_description (if provided) for each column, analyze them, and check if the correct columns are being used in the current SQL.
+2. Pay close attention to the value_sample for each column. Explicitly write out in the value_sample.
+3. Please check that the value written in the SQL condition exists in the value example, if there may not be a corresponding value in the current column, it is possible that the wrong column is being used, consider whether other columns could complete the ###Input. When performing this step, please refer to the ###Value example and do not rely on the information in the ###Hint.
+4. Check the values used in the conditional section of the SQL, compare the values in the SQL with the values in the value_sample displayed, and make sure that the values are case-accurate (this is very important).
+5. If you identify any issues with the current SQL after your analysis, please help correct it. While fixing the SQL, ensure that it follows SQLite syntax. If no issues are found, do not make any changes, and provide the original SQL as is.
+6. If the SQL contains arithmetic operations, explicitly identify the arithmetic operation parts and force the use of the CAST function to convert those parts to a floating-point type.
+7. Provide the final SQL with or without corrections based on your analysis. 
+8. Please place the final SQL on the last line and write the SQL in a single line following the format below, without adding any line breaks in the SQL and without using any other format:
+###SQL: SELECT song_name, song_release_year FROM singer ORDER BY age LIMIT 1; ###END
+
+###Database schema:
+{db_info}
+
+###Value Examples:
+{key_col_des}
+
+###Input:
+{question}
+
+###Hint:
+{hint}
+
+###Pre-SQL:
+{presql}

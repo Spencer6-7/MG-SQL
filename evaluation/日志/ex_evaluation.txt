@@ -1,0 +1,151 @@
+  │  ~/F/l/M-SQL/evaluation │   master !8 ?29  conda activate text2sql
+
+  │  ~/F/l/M-SQL/evaluation │   master !8 ?29  bash run_eva.sh
+bash: warning: setlocale: LC_ALL: cannot change locale (zh_CN.UTF-8)
+Starting task: predict_dev_vote
+Copied predict_dev_vote.json -> predict_dev.json
+Running evaluation for predict_dev_vote...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             76.00                60.78                57.93                69.69
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote
+Saved result as ./sqls3/chess_predict_dev_vote.json
+Starting task: predict_dev_vote_cot
+Copied predict_dev_vote_cot.json -> predict_dev.json
+Running evaluation for predict_dev_vote_cot...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             69.84                54.53                46.21                62.97
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_cot
+Saved result as ./sqls3/chess_predict_dev_vote_cot.json
+Starting task: predict_dev_vote_dynamic
+Copied predict_dev_vote_dynamic.json -> predict_dev.json
+Running evaluation for predict_dev_vote_dynamic...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             71.24                57.11                51.72                65.12
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_dynamic
+Saved result as ./sqls3/chess_predict_dev_vote_dynamic.json
+Starting task: predict_dev_vote_wo_cot
+Copied predict_dev_vote_wo_cot.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_cot...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             74.27                60.13                54.48                68.12
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_cot
+Saved result as ./sqls3/chess_predict_dev_vote_wo_cot.json
+Starting task: predict_dev_vote_wo_cot1
+Copied predict_dev_vote_wo_cot1.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_cot1...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             75.78                61.42                55.17                69.49
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_cot1
+Saved result as ./sqls3/chess_predict_dev_vote_wo_cot1.json
+Starting task: predict_dev_vote_wo_cot2
+Copied predict_dev_vote_wo_cot2.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_cot2...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             74.27                60.13                54.48                68.12
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_cot2
+Saved result as ./sqls3/chess_predict_dev_vote_wo_cot2.json
+Starting task: predict_dev_vote_wo_dy0
+Copied predict_dev_vote_wo_dy0.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_dy0...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             76.32                60.56                56.55                69.69
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_dy0
+Saved result as ./sqls3/chess_predict_dev_vote_wo_dy0.json
+Starting task: predict_dev_vote_wo_dy1
+Copied predict_dev_vote_wo_dy1.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_dy1...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             76.11                60.34                57.93                69.62
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_dy1
+Saved result as ./sqls3/chess_predict_dev_vote_wo_dy1.json
+Starting task: predict_dev_vote_wo_dy2
+Copied predict_dev_vote_wo_dy2.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_dy2...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             76.54                61.21                57.24                70.08
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_dy2
+Saved result as ./sqls3/chess_predict_dev_vote_wo_dy2.json
+Starting task: predict_dev_vote_wo_dynamic
+Copied predict_dev_vote_wo_dynamic.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_dynamic...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             74.59                58.41                53.10                67.67
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_dynamic
+Saved result as ./sqls3/chess_predict_dev_vote_wo_dynamic.json
+Starting task: predict_dev_vote_wo_gsr
+Copied predict_dev_vote_wo_gsr.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_gsr...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             75.68                60.78                53.79                69.10
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_gsr
+Saved result as ./sqls3/chess_predict_dev_vote_wo_gsr.json
+Starting task: predict_dev_vote_wo_queryplan
+Copied predict_dev_vote_wo_queryplan.json -> predict_dev.json
+Running evaluation for predict_dev_vote_wo_queryplan...
+start calculate
+                     simple               moderate             challenging          total
+count                925                  464                  145                  1534
+======================================    ACCURACY    =====================================
+accuracy             74.92                61.42                54.48                68.90
+===========================================================================================
+Finished evaluation
+Completed task: predict_dev_vote_wo_queryplan
+Saved result as ./sqls3/chess_predict_dev_vote_wo_queryplan.json
+All tasks finished.
+
+  │  ~/F/l/M-SQL/evaluation │   master !8 ?29

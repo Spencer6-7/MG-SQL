@@ -1,0 +1,24 @@
+❯ python SL_evaluation.py
+=================列指标================
+NSR:  0.9968
+NSP： 0.1067
+SRR:  0.9889
+SRP:  0.0000
+Recall:  0.9970
+Precision:  0.1412
+F1 score 0.2351
+=================表指标=================
+Table NSR:  0.9997
+Table NSP： 0.2742
+Table SRR:  0.9993
+Table SRP:  0.0104
+Table Recall:  0.9998
+Table Precision:  0.3291
+Table F1 score 0.4688
+=================长度指标================
+Schema Avg.T:  7.44
+Schema Avg.C:  76.28
+Gold Avg.T:  1.94
+Gold Avg.C:  4.50
+Pred Avg.T:  7.08
+Pred Avg.C:  42.02

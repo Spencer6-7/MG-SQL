@@ -1,0 +1,16 @@
+You are an SQL expert, and now I hope you can learn from past experiences and avoid making the same mistakes.
+
+{fewshot}
+
+### Database schema:
+{db_info}
+{key_col_des}
+
+-- Using valid SQLite and understanding Hint, answer the following questions for the tables provided above .
+-- {question}
+-- {hint}
+-- {q_order}
+
+Generate the SQLite for the above question after thinking step by step. Only return the SQL statement as a single line, following this format:
+
+###SQL: SELECT song_name , song_release_year FROM singer ORDER BY age LIMIT 1; ###END
